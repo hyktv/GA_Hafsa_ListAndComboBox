@@ -1,0 +1,21 @@
+﻿<Window x:Class="GA_Hafsa_ListAndComboBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GA_Hafsa_ListAndComboBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <ComboBox x:Name="cmbFirstName" Width="165" Canvas.Left="30" Canvas.Top="143" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbLastNames" Height="131" Width="248" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="233" Canvas.Top="142" SelectionChanged="lbLastNames_SelectionChanged"/>
+        <Button x:Name="btnDisplayFullName" Content="Display FIll Name" Canvas.Left="291" Canvas.Top="300" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Click="btnDisplayFullName_Click"/>
+        <Label Content="Last Name" Canvas.Left="30" Canvas.Top="80"/>
+        <Label Content="First  Name" Canvas.Left="30" Canvas.Top="27"/>
+        <TextBox x:Name="txtFirstName" TextWrapping="Wrap" Width="121" Canvas.Left="112" Canvas.Top="31"/>
+        <TextBox x:Name="txtLastName" TextWrapping="Wrap" Width="120" Canvas.Left="112" Canvas.Top="84"/>
+        <Button x:Name="btnAddNames" Content="Add Names" Canvas.Left="252" Canvas.Top="31" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Click="btnAddNames_Click"/>
+        <Button x:Name="btnRemoveStudentAtIndex" Content="Remove Students At index" Canvas.Left="252" Canvas.Top="84" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Click="btnRemoveStudentAtIndex_Click"/>
+
+    </Canvas>
+</Window>
